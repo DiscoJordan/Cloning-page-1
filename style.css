@@ -1,0 +1,112 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+a{
+    color: #faa500;
+    
+}
+ul {
+    list-style-type: none;
+}
+
+header {
+    padding: 15px;
+    background-color: black;
+    color: white;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+}
+
+nav ul {
+    display: flex;
+    gap: 30px;
+}
+.main{
+    height: 100vh;
+    background-image: url("./images/main-beer.jpeg");
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 20px;
+    color: white;
+}
+.main__title{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 50px;
+}
+.main__button{
+    color: white;
+    background-color: black;
+    padding: 30px;
+}
+.location{
+    text-align: center;
+    padding: 20px;
+}
+.location p{
+    text-align: left;
+}
+.gallery{
+    padding: 20px;
+    text-align: center;
+}
+.photo-mash{
+    display: flex;
+    justify-content: space-between;
+}
+.beer{
+    padding: 20px;
+    text-align: center;
+}
+.types-of-beer{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 200px;
+    margin: 50px;
+
+}
+.types-of-beer p{
+    text-align: left;
+}
+.types-of-beer__beer-item{
+    max-width: 400px;
+    
+}
+.team{
+    padding: 20px;
+    text-align: center;
+}
+.team-photo-mash{
+    display: flex;
+    justify-content: space-between;
+    margin: 10px 0;
+}
+.team-photo-mash img{
+   width: 480px;
+}
+footer{
+    background-color: black;
+    color: white;
+    text-align: center;
+    padding: 20px 0;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    gap: 20px;
+
+}
+.copyright,.phone{
+    display: flex;
+    justify-content: center;
+}
