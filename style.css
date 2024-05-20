@@ -60,9 +60,16 @@ nav ul {
     padding: 20px;
     text-align: center;
 }
+.gallery img{
+   width: 100%;
+}
 .photo-mash{
     display: flex;
     justify-content: space-between;
+}
+.photo-mash img{
+    width: 480px; 
+    height:240px;
 }
 .beer{
     padding: 20px;
