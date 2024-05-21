@@ -112,7 +112,10 @@ nav ul {
     color: white;
     background-color: black;
     padding: 30px;
+    text-decoration: none;
+   
 }
+
 
 .location {
     text-align: center;
