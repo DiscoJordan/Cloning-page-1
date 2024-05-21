@@ -18,15 +18,29 @@
 <body>
     <header>
         <nav>
-            <a href="index.html"><h2>Dear Beer</h2></a>
-            <ul>
+            <a href="index.html">
+                <h2>Dear Beer</h2>
+            </a>
+            <ul class="navigation">
                 <li> <a href="location.html">Location</a></li>
                 <li> <a href="gallery.html">Gallery</a></li>
                 <li> <a href="beer.html">Beer</a></li>
                 <li> <a href="team.html">Team</a></li>
             </ul>
+            <div class="burger">
+                <span>|||</span>
+                <ul class="burger__content">
+                    <li> <a href="location.html">Location</a></li>
+                    <li> <a href="gallery.html">Gallery</a></li>
+                    <li> <a href="beer.html">Beer</a></li>
+                    <li> <a href="team.html">Team</a></li>
+                </ul>
+
+                </ul>
+            </div>
         </nav>
     </header>
+
 
     <div class="gallery">
         <div class="container">
@@ -41,8 +55,11 @@
                 <div class="beer-photo">
                     <img class="poster" src="/images/beer-poster-3.png" alt="Beer Poster">
                 </div>
+                <div class="beer-photo" id="big-poster" >
+                    <img class="poster" src="/images/beer-poster-4.png" alt="Beer Poster">
+                </div>
             </div>
-            <img src="/images/beer-poster-4.png" alt="Beer Poster">
+            
         </div>
     </div>
     

@@ -7,7 +7,8 @@
     font-style: normal;
     scroll-behavior: smooth;
 }
-.container{
+
+.container {
     margin: 0 auto;
     max-width: 1200px;
     padding: 0 25px;
@@ -16,11 +17,46 @@
     gap: 20px;
 }
 
-ul a{
+.navigation a {
     color: white;
     text-decoration: none;
 }
-  
+
+.burger {
+    display: none;
+    position: relative;
+}
+
+.burger__content a {
+    color: white;
+    text-decoration: none;
+
+
+}
+
+.burger__content {
+    background-color: black;
+    display: none;
+    position: absolute;
+    right: 0;
+    z-index: 1;
+    padding: 10px;
+}
+
+.burger span {
+    transition: transform .5s;
+    -webkit-transition: -webkit-transform .5s;
+    display: block;
+    transform: rotate(90deg);
+}
+
+.burger:hover span {
+    transition: transform .5s;
+    -webkit-transition: -webkit-transform .5s;
+    display: inline-block;
+    transform: rotate(180deg);
+}
+
 a {
     color: #faa500;
 
@@ -29,6 +65,7 @@ a {
 ul {
     list-style-type: none;
 }
+
 
 header {
     height: 80px;
@@ -102,6 +139,16 @@ nav ul {
     gap: 20px;
 }
 
+.team-mash {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 20px;
+}
+
+#big-poster {
+    grid-column: 1/4;
+}
+
 .poster {
     object-fit: cover;
     max-width: 100%;
@@ -114,11 +161,10 @@ nav ul {
 }
 
 .types-of-beer {
-    display: flex;
-    justify-content: center;
-    flex-wrap: wrap;
-    gap: 200px;
-    margin: 50px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    justify-items: center;
+    gap: 20px;
 
 }
 
@@ -135,11 +181,6 @@ nav ul {
     text-align: center;
 }
 
-
-
-.team-photo-mash img {
-    width: 480px;
-}
 
 footer {
     background-color: black;
@@ -170,21 +211,59 @@ footer {
     .types-of-beer {
         gap: 40px;
     }
-    .photo-mash {
-    
-        grid-template-columns: 1fr;
+
+    .team-mash {
+        grid-template-columns: 1fr 1fr;
     }
+
 }
 
 @media (max-width: 767px) {
     .types-of-beer {
+
+        grid-template-columns: 1fr;
+    }
+
+    .photo-mash {
+        grid-template-columns: 1fr;
+    }
+
+    #big-poster {
+        grid-column: 1 / 1;
+    }
+
+    .types-of-beer {
         gap: 20px;
+    }
+
+    .burger {
+        display: block;
+    }
+
+    .burger__content {
+        display: none;
+    }
+
+    .navigation {
+        display: none;
+    }
+
+    .burger:hover .burger__content {
+        display: flex;
+        flex-direction: column;
     }
 }
 
 @media (max-width: 425px) {
-   
+    .more_text {
+        display: none;
+    }
+
     footer {
         display: none;
+    }
+
+    .team-mash {
+        grid-template-columns: 1fr;
     }
 }
