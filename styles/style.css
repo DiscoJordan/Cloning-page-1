@@ -16,7 +16,10 @@
     gap: 20px;
 }
 
-
+ul a{
+    color: white;
+    text-decoration: none;
+}
   
 a {
     color: #faa500;
@@ -50,7 +53,7 @@ nav ul {
 
 .main {
     height: 100vh;
-    background-image: url("./images/main-beer.jpeg");
+    background-image: url("/images/main-beer.jpeg");
 
     display: flex;
     justify-content: center;
