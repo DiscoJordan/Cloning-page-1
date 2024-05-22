@@ -1,13 +1,4 @@
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    font-family: "Roboto", sans-serif;
-    font-weight: 400;
-    font-style: normal;
-    scroll-behavior: smooth;
-}
-
+f
 .container {
     margin: 0 auto;
     max-width: 1200px;
@@ -194,6 +185,7 @@ footer {
     justify-content: center;
     flex-direction: column;
     gap: 20px;
+
 
 }
 
